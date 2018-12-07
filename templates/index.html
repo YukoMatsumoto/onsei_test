@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang='ja'>
+<head>
+    <meta charset="UTF-8">
+    <title>WebSpeechAPIデモ</title>
+
+</head>
+
+<body>
+<h1 class="text-center h1">Web Speech API テスト</h1>
+<div id="content">
+    <input type="textarea" id="q" name="q" size=60>
+    <input type="button" value="Click to Speak" onclick="recognition.start()">
+</div>
+
+<script type="text/javascript" src="{{ url_for('static', filename='recognition.js')}}"></script>
+</body>
+
+</html>
